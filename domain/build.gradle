@@ -37,6 +37,24 @@ dependencies {
     def retrofit_version = "2.9.0"
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    def view_model_version = "2.5.0"
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$view_model_version"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$view_model_version")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$view_model_version")
+
+    //Hilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-android-compiler:2.44"
+
+    //Okhttpclient
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+
+    def room_version = "2.5.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
 }
 
 /*
